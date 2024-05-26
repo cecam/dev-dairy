@@ -4,7 +4,18 @@ export interface Project {
     description: string;
     technology: string[];
     status: ProjectStatus;
+    startDate: Date;
 }
+
+export interface ProjectCard {
+    id: string;
+    name: string;
+    description: string;
+    status: ProjectStatus;
+    startDate: Date;
+}
+
+
 
 export enum ProjectStatus {
     Active = 'active',
